@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+                                        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="turismo, viajar, pasajes, vacaciones, turismo internacional,
+                                      destinos turisiticos">
+        <meta name="description" content="Planes de paquetes turisticos a destinos internacionales en
+                                      Ameria, Europa y Asia">
+
+                                          <!-- Favicon -->
+
+        <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon">
+
+                                    <!-- Google Fonts links -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,300;0,
+        500;1,100;1,300;1,500&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+                        <!-- link a archivos main.css y bootstrap.css -->
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+
+                                      <!-- titulo del sitio -->
+
+        <title>Viajar punto com - VPC</title>
+    </head>
+
+    <body>
+
+      <div id="page"> <!-- apertura del div contenedor general del sitio con display GRID -->
+
+                        <!-- ======================================== -->
+                            <!-- Código del encabezado de página -->
+                        <!-- ======================================== -->
+
+        <header class="header">
+          <div>
+            <img class="logoFoto" src="public/img/logo.jpeg" alt="logo de la empresa">
+          </div>
+
+          <div>
+            <h1>ViajarPuntoCom</h1>
+          </div>
+
+        </header>
+
+                          <!-- ======================================== -->
+              <!-- Código del Nav para DESTINOS ( direcciona a páginas secundarias)  -->
+                          <!-- ======================================== -->
+
+        <nav class="navIzq">
+
+          <h2>Destinos</h2>
+
+          <ul class="listaSinpunto">
+            <li class="liDestinos">
+              <a href="pages/america_del_norte.html">América del Norte</a>
+            </li>
+            <li class="liDestinos">
+              <a href="pages/caribe.html">Caribe</a>
+            </li >
+            <li class="liDestinos">
+              <a href="pages/america_del_sur.html">América del Sur</a>
+            </li>
+            <li class="liDestinos">
+              <a href="pages/europa.html">Europa</a>
+            <li class="liDestinos">
+              <a href="pages/asia.html">Asia</a>
+            </li>
+          </ul>
+
+        </nav>
+
+                            <!-- ======================================== -->
+                        <!-- Código del Main con informacion sobre la empresa -->
+                            <!-- ======================================== -->
+
+        <main class="section">
+
+        <section class="presentaEmpresa">
+          <p>Viajar "punto com" es una empresa con 30 años de trayectoria. Ofrecemos paquetes
+            de turismo a los mejores lugares del mundo. Tenemos los precios más competitivos
+            y varios planes de pago.</p>
+
+          <h3>Trabajamos con las siguientes empresas:</h3>
+
+          <ul class="empresasFlex">
+            <li class="liEmpresas">Despegar.com</li>
+            <li class="liEmpresas">Hoteles Holiday Inn</li>
+            <li class="liEmpresas">Lufthansa - Iberia - American Airlines</li>
+          </ul>
+
+          <h3 class="tarjetas">Visa  /  Mastercard</h3>
+
+        </section>
+
+                            <!-- ======================================== -->
+                      <!-- Código de un CAROUSEL para fotos de DESTINOS copiado
+                        desde la web de Bootstrap y editada su clase de .css -->
+                            <!-- ======================================== -->
+
+
+        <section class="art">
+
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img src="public/img/caribe_impr_4.jpg" class="d-block w-auto" width="170px" height="120px" alt="playa de San Juan, Puerto Rico">
+              </div>
+
+              <div class="carousel-item">
+                <img src="public/img/car-2.jpeg" class="d-block w-auto" width="230px" height="120px" alt="Nassau, Bahamas">
+              </div>
+
+              <div class="carousel-item">
+                <img src="public/img/europa.jpg" class="d-block w-auto" width="260px" height="120px" alt="Grecia, Parthenon">
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+
+          </div>
+
+
+        </section>
+
+                                <!-- ======================================== -->
+                            <!-- Código de un FORM copiado desde la web de Bootstrap
+                                  y editada su clase de .css -->
+                                <!-- ======================================== -->
+
+        <form>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="ingrese su email">
+          </div>
+
+          <div class="mb-sm-2">
+            <label for="exampleFormControlTextarea1"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Escriba su consulta"></textarea></textarea>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+
+        </main>
+
+                      <!-- ======================================== -->
+                                <!-- Código del ASIDE -->
+                      <!-- ======================================== -->
+
+        <aside class="side aside backgroundImage">
+
+          <input class="buscarCenter" type="search" placeholder="Ingrese su destino"><br>
+          <button class="buscarCenter">Buscar</button><br>
+
+          <h5>Sorteo para Promociones</h5>
+          <h6>Bases para el sorteo:</h6>
+
+          <ol class="sorteo">
+            <li class="liSorteo">Residencia en Argentina</li>
+            <li class="liSorteo">Edad entre 20 y 40 años</li>
+            <li class="liSorteo">Disponibilidad para viajar por 30 días</li>
+          </ol>
+
+        </aside>
+
+                      <!-- ======================================== -->
+                                <!-- Código del Footer  -->
+                      <!-- ======================================== -->
+
+        <footer class="footer piedePagina divcontacto">
+            <a href="mailto: viajarpuntocom@viajarpuntocom.com">viajarpuntocom@viajarpuntocom.com</a>
+            <ul class="ulSecundario">
+              <li>Av Corrientes 900</li>
+              <li>Buenos Aires</li>
+              <li>Argentina</li>
+            </ul>
+
+            <div class="socialSecundario">
+              <p>Siguenos en:</p>
+              <ul class="ulliSocial">
+                <li><a href="https://www.facebook.com/" target="_blank">
+                  <img src="public/img/icono_facebook.png" alt="icono de facebook" width="30" height="30"></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank">
+                  <img src="public/img/icono_youtube.png" alt="icono de youtube" width="30" height="30"></a></li>
+                <li><a href="https://twitter.com/" target="_blank">
+                  <img src="public/img/icono_twitter.png" alt="icono de twitter" width="30" height="30"></a></li>
+              </ul>
+            </div>
+        </footer>
+
+      </div>  <!-- cierre del div contenedor general del sitio con display GRID -->
+      <script src="js/bootstrap.js"></script>
+
+    </body>
+</html>
