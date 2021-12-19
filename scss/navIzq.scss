@@ -1,0 +1,31 @@
+// Parámetros generales del NAV lado izquierdo del index
+
+.navIzq {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4; }
+
+.navIzq a {
+    color: blue; }
+
+
+@media (max-width: 768px) {
+.navIzq {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    gap: 3px; } }
+
+@media (max-width: 576px) {
+.navIzq {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    gap: 1.5px;
+    margin-bottom: 15px; } }
+
+.navIzq h2 {
+    text-align: center; }

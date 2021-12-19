@@ -1,0 +1,28 @@
+$colorPiedePagina: #f1f3ef;
+$borderPiedePagina: 1px solid black;
+
+.socialSecundario {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+
+.ulSecundario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    text-align: center; }
+
+.ulSecundario li p {
+    margin: -6px;
+    text-align: center; }
+
+.piedePagina {
+    background-color: $colorPiedePagina;
+    border: $borderPiedePagina
+    margin: auto;
+    width: 70%; }
+
+.footerSecundario {
+    margin-top: 60px; }

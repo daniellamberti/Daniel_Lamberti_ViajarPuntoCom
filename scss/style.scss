@@ -1,0 +1,81 @@
+// Imports varios
+
+@import "page";
+@import "header";
+@import "presentaEmpresa";
+@import "liEmpresas";
+@import "navIzq";
+@import "liDestinos";
+@import "section";
+@import "art";
+@import "side";
+@import "aside";
+@import "footer";
+@import "archivosSecundario";
+@import "sectionFlex1";
+@import "sectionFlex2";
+@import "footerSecundario";
+
+// Seteos generales de padding y márgenes
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; }
+
+@font-face {
+    font-family: Ubuntu;
+    src:url("../fonts/Ubuntu.ttf");
+}
+
+// Font family del BODY y su background-color
+
+body {
+    font-family: 'Sarabun', sans-serif !important;
+    background-color: #edf5e6; }
+
+.backgroundImage {
+    background: url(../public/img/caribe_30.jpeg) no-repeat center;
+    background-size: cover; }
+
+// Seteos para h1, h2 y p
+
+h2 {
+    padding: 20px; }
+
+@media (max-width: 768px) {
+h2  {
+    padding: 12px; } }
+
+@media (max-width: 768px) {
+h2  {
+    padding: 8px; } }
+
+p {
+    color: black;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 3px;
+    text-align: justify;
+    font-size: 2vw; }
+
+div h1 {
+    font-family: courgette, cursive;
+    margin-left: 100px;
+    color: #1b05dd;
+    font-size: 4vw;
+    font-family: Ubuntu; }
+
+
+.tarjetas {
+    width: 30%;
+    background-color: #dbdbd8;
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 5px; }
+
+section p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    margin-left: 8px; }

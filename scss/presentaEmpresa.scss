@@ -1,0 +1,23 @@
+// Parámetros para el texto de presentación de la empresa, en el index
+
+.presentaEmpresa {
+    margin: auto;
+    margin-bottom: 4px;
+    margin-top: 20px;
+    text-align: justify; }
+
+.presentaEmpresa p {
+    text-align: justify;
+    padding: 10px;
+    margin: auto;
+    font-size: 1.2rem; }
+
+@media (max-width: 768px) {
+.presentaEmpresa p {
+    padding: 8px;
+    font-size: 1rem; } }
+
+@media (max-width: 576px) {
+.presentaEmpresa p {
+    padding: 8px;
+    font-size: 1.04rem; } }

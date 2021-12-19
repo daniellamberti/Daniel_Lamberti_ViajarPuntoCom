@@ -1,0 +1,86 @@
+// Parámetros FOOTER del index
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5; }
+
+@media (max-width: 768px) {
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6; } }
+
+@media (max-width: 576px) {
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8; } }
+
+.logoFoto {
+    opacity: 0.9;
+    width: 50px;
+    height: 50px;
+    margin: auto; }
+
+.listaSinpunto {
+    list-style-type: none;
+    text-decoration: none; }
+
+.divcontacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 15px;
+    padding: 10px; }
+
+.divcontacto p {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 1rem; }
+
+@media (max-width: 873px) {
+.divcontacto {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto; } }
+
+@media (max-width: 576px) {
+.divcontacto {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto; } }
+
+@media (max-width: 875px) {
+.divcontacto p {
+    font-size: .8rem; } }
+
+@media (max-width: 568px) {
+.divcontacto p {
+    font-size: .6rem; } }
+
+.divcontacto a {
+    font-size: 1rem; }
+
+@media (max-width: 875px) {
+.divcontacto a {
+    font-size: .8rem;
+    margin-bottom: 6px; } }
+
+.ulliSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+.ulliSocial li {
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 3px;
+    list-style-type: none; }

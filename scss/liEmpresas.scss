@@ -1,0 +1,43 @@
+// Parámetros para el NAV con las empresas asociadas
+
+.liEmpresas {
+    padding: 6px;
+    text-align: left;
+    margin-left: 40px;
+    list-style-type: none; }
+
+.empresasFlex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3px;
+    list-style-type: none;
+    margin: auto;
+    margin-bottom: 20px }
+
+.empresasFlex li {
+    font-size: 1.4rem !important; }
+
+@media (max-width: 768px) {
+.empresasFlex {
+    justify-content: center; } }
+
+@media (max-width: 768px) {
+.empresasFlex li {
+    font-size: 1.2rem !important; } }
+
+@media (max-width: 576px) {
+.empresasFlex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+    list-style-type: none;
+    margin: auto; } }
+
+@media (max-width: 768px) {
+.empresasFlex li {
+    font-size: 1rem !important; } }

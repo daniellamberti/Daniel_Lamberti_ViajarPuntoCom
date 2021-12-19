@@ -1,0 +1,79 @@
+// Variables
+
+$bck-col-sec:#edf5e6;
+$borderHeaderSec: 2px solid black;
+
+
+// Parámetros HEADER de páginas Secundarias
+
+
+
+#bodySecundario {
+    background-color: $bck-col-sec; }
+
+.hacheunoSecundario {
+    font-size: 42px;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: 5px; }
+
+.headerSecundario {
+    width: 70%;
+    margin: auto;
+    border: $borderHeaderSec;
+    background-color: #f1f3ef; }
+
+.headerSecundario ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none; }
+
+@media (max-width: 680px) {
+headerSecundario ul {
+    flex-direction: column; } }
+
+.secundarioUl {
+    margin: 10px; }
+
+.secundarioUl li {
+    padding: 1px; }
+
+.secundarioUl li:hover {
+    background-color: aqua;
+    border: 1px solid black; }
+
+.secundarioUl a {
+    text-decoration: none;
+    color: blue;
+    font-size: 1rem;
+    text-decoration: none; }
+
+.textoSecundario {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 1rem; }
+
+.textoSecundario h2 {
+    font-size: 1.5rem !important; }
+
+@media (max-width: 768px) {
+.textoSecundario h2 {
+    font-size: 1.2rem !important; } }
+
+@media (max-width: 576px) {
+section .textoSecundario h2 {
+    font-size: 1rem !important; } }
+
+.paquetes {
+    margin-top: 7px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-align: center; }

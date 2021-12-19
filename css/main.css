@@ -1,0 +1,722 @@
+
+/*  ======================================= */
+/*  Parametros generales a todas las paginas
+        del sitio para blanqueo de seteos
+                 automaticos */
+ /*  ======================================= */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+/*  ======================================= */
+/* Colores, margenes, tamaños, padding, etc
+    de etiquetas del index y algunas tambien
+  generales a todo el resto de las paginas. */
+ /*  ======================================= */
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("../fonts/Ubuntu.ttf"); }
+
+body {
+  font-family: 'Sarabun', sans-serif !important;
+  background-color: #edf5e6; }
+
+.backgroundImage {
+  background: url(../public/img/caribe_30.jpeg) no-repeat center;
+  background-size: cover; }
+
+h2 {
+  padding: 20px; }
+
+@media (max-width: 768px) {
+  h2 {
+    padding: 12px; } }
+
+@media (max-width: 768px) {
+  h2 {
+    padding: 8px; } }
+
+p {
+  color: black;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 3px;
+  text-align: justify;
+  font-size: 2vw; }
+
+div h1 {
+  font-family: courgette, cursive;
+  margin-left: 100px;
+  color: #1b05dd;
+  font-size: 4vw;
+  font-family: Ubuntu; }
+
+/*  ======================================= */
+/*  CSS con los parámetros para el div contenedor
+      de todo el sitio con display GRID  */
+ /* ======================================= */
+
+#page {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat 4, 1fr; }
+
+@media screen and (max-width: 768px) {
+  #page {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat 5, 1fr; } }
+
+@media screen and (max-width: 576px) {
+  #page {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat 7, 1fr; } }
+
+/*  ======================================= */
+/*    Parametros header */
+ /*  ======================================= */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #dbdbd8; }
+
+@media (max-width: 768px) {
+  .header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2; } }
+
+@media (max-width: 576px) {
+  .header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; } }
+
+/*  ======================================= */
+/*   Parametros nav lado izquierdo */
+ /*  ======================================= */
+
+.navIzq {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4; }
+
+.navIzq a {
+  color: blue; }
+
+@media (max-width: 768px) {
+  .navIzq {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    gap: 3px; } }
+
+@media (max-width: 576px) {
+  .navIzq {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    gap: 1.5px;
+    margin-bottom: 15px; } }
+
+.navIzq h2 {
+  text-align: center; }
+
+/*  ======================================= */
+/*    Parametros del nav lado izquierdo para
+             la lista de DESTINOS  */
+ /*  ======================================= */
+
+.liDestinos {
+  padding: 8px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(41, 130, 247, 0.616);
+  width: 70%;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  .liDestinos {
+    padding: 6px;
+    margin-bottom: 15px; } }
+
+@media (max-width: 576px) {
+  .liDestinos {
+    padding: 2px;
+    margin-left: 50px;
+    margin-bottom: 10px; } }
+
+.liDestinos:hover {
+  background-color: aqua;
+  transform: scale(1.2);
+  text-align: center;
+  transform: translate(20px, 0px); }
+
+@media (max-width: 768px) {
+  .liDestinos:hover {
+    transform: scale(1.1);
+    transform: translate(15px, 0px); } }
+
+@media (max-width: 576px) {
+  .liDestinos:hover {
+    transform: scale(1);
+    transform: translate(10px, 0px); } }
+
+.liDestinos a {
+  padding: 6px;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 5px;
+  font-size: 1.2rem; }
+
+@media (max-width: 768px) {
+  .liDestinos a {
+    margin: 3px;
+    font-size: 1.1rem; } }
+
+@media (max-width: 576px) {
+  .liDestinos a {
+    padding: 1px;
+    margin: 1px;
+    font-size: 1rem; } }
+
+/*  ======================================= */
+/*    Parametros section */
+ /*  ======================================= */
+
+.section {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-bottom: 10px; }
+
+@media (max-width: 768px) {
+  .section {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4; } }
+
+@media (max-width: 576px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3; } }
+
+.section h3 {
+  font-size: 1.4rem;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  .section h3 {
+    font-size: 1.2rem; } }
+
+@media (max-width: 576px) {
+  .section h3 {
+    font-size: 1rem; } }
+
+section p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    margin-left: 8px; }
+
+/*  ======================================= */
+/*    Parametros del Section para la lista
+                de Empresas */
+ /*  ======================================= */
+
+.presentaEmpresa {
+    margin: auto;
+    margin-bottom: 4px;
+    margin-top: 20px;
+    text-align: justify; }
+    
+.presentaEmpresa p {
+    text-align: justify;
+    padding: 10px;
+    margin: auto;
+    font-size: 1.2rem; }
+
+@media (max-width: 768px) {
+    .presentaEmpresa p {
+      padding: 8px;
+      font-size: 1rem; } }
+
+@media (max-width: 576px) {
+    .presentaEmpresa p {
+      padding: 8px;
+      font-size: 1.04rem; } }
+
+.liEmpresas {
+    padding: 6px;
+    text-align: left;
+    margin-left: 40px;
+    list-style-type: none; }
+
+.empresasFlex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3px;
+    list-style-type: none;
+    margin: auto;
+    margin-bottom: 20px; }
+
+.empresasFlex li {
+    font-size: 1.4rem !important; }
+
+@media (max-width: 768px) {
+    .empresasFlex {
+      justify-content: center; } }
+
+@media (max-width: 768px) {
+    .empresasFlex li {
+      font-size: 1.2rem !important; } }
+
+@media (max-width: 576px) {
+    .empresasFlex {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3px;
+      list-style-type: none;
+      margin: auto; } }
+
+@media (max-width: 768px) {
+    .empresasFlex li {
+      font-size: 1rem !important; } }
+
+.tarjetas {
+      width: 30%;
+      background-color: #dbdbd8;
+      margin: auto;
+      margin-bottom: 25px;
+      padding: 5px; }
+
+/*  ======================================= */
+            /* Parametros art */
+ /*  ======================================= */
+
+.art {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+@media (max-width: 768px) {
+  .art {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5; } }
+
+@media (max-width: 576px) {
+  .art {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6; } }
+
+/*  ======================================= */
+/*            Parametros side */
+/*  ======================================= */
+
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4; }
+
+@media (max-width: 768px) {
+  .side {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5; } }
+
+@media (max-width: 576px) {
+  .side {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7; } }
+
+/*  ======================================= */
+/*            Parametros aside */
+ /*  ======================================= */
+
+.aside {
+  margin-left: 8px;
+  padding: 5px; }
+
+.aside h3, h4 {
+  text-align: center; }
+
+.sorteo li {
+  font-size: 1rem !important; }
+
+.liSorteo {
+  padding: 5px;
+  margin: auto; }
+
+/*  ======================================= */
+/*            Parametros footer */
+ /*  ======================================= */
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5; }
+
+@media (max-width: 768px) {
+  .footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6; } }
+
+@media (max-width: 576px) {
+  .footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8; } }
+
+.logoFoto {
+  opacity: 0.9;
+  width: 50px;
+  height: 50px;
+  margin: auto; }
+
+.listaSinpunto {
+  list-style-type: none;
+  text-decoration: none; }
+
+.divcontacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 15px;
+  padding: 10px; }
+
+.divcontacto p {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 5px;
+  font-size: 1rem; }
+
+@media (max-width: 873px) {
+  .divcontacto {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto; } }
+
+@media (max-width: 576px) {
+  .divcontacto {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto; } }
+
+@media (max-width: 875px) {
+  .divcontacto p {
+    font-size: .8rem; } }
+
+@media (max-width: 568px) {
+  .divcontacto p {
+    font-size: .6rem; } }
+
+.divcontacto a {
+  font-size: 1rem; }
+
+@media (max-width: 875px) {
+  .divcontacto a {
+    font-size: .8rem;
+    margin-bottom: 6px; } }
+
+.ulliSocial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.ulliSocial li {
+  margin-right: 2px;
+  margin-left: 2px;
+  padding: 3px;
+  list-style-type: none; }
+
+/*  ======================================= */
+/* Parametros generales paginas secundarias */
+ /*  ======================================= */
+
+#bodySecundario {
+  background-color: #edf5e6; }
+
+.hacheunoSecundario {
+  font-size: 42px;
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-bottom: 5px; }
+
+/*  ======================================= */
+/* Parametros paginas secundarias HEADER */
+ /*  ======================================= */
+
+.headerSecundario {
+  width: 70%;
+  margin: auto;
+  border: 2px solid black;
+  background-color: #f1f3ef; }
+
+.headerSecundario ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  list-style-type: none; }
+
+@media (max-width: 680px) {
+  headerSecundario ul {
+    flex-direction: column; } }
+
+.secundarioUl {
+  margin: 10px; }
+
+.secundarioUl li {
+  padding: 1px; }
+
+.secundarioUl li:hover {
+  background-color: aqua;
+  border: 1px solid black; }
+
+.secundarioUl a {
+  text-decoration: none;
+  color: blue;
+  font-size: 1rem;
+  text-decoration: none; }
+
+.textoSecundario {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  line-height: 1rem; }
+
+.textoSecundario h2 {
+  font-size: 1.5rem !important; }
+
+@media (max-width: 768px) {
+  .textoSecundario h2 {
+    font-size: 1.2rem !important; } }
+
+@media (max-width: 576px) {
+  section .textoSecundario h2 {
+    font-size: 1rem !important; } }
+
+.paquetes {
+  margin-top: 7px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  font-size: 24px;
+  text-align: center; }
+
+/*  ======================================= */
+/* Parametros paginas secundarias SECTION 1 Flex */
+ /*  ======================================= */
+
+.sectionFlex1 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.sectionFlex1 div {
+  width: 20%;
+  margin: 0 auto; }
+
+.sectionFlex1 div img {
+  margin: auto; }
+
+.sectionFlex1 p {
+  text-align: center;
+  font-size: 1rem; }
+
+@media (max-width: 1120) {
+  .sectionFlex1 p {
+    text-align: center;
+    font-size: .8rem; } }
+
+@media (max-width: 768px) {
+  .sectionFlex1 {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; } }
+
+@media (max-width: 768px) {
+  .sectionFlex1 div {
+    width: 40%;
+    align-self: center; } }
+
+@media (max-width: 576px) {
+  .sectionFlex1 {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media (max-width: 576px) {
+  .sectionFlex1 div {
+    margin: 1rem;
+    width: 60%; } }
+
+.sectionFlex1 div h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #f0dec4;
+  border: 1px solid black; }
+
+@media (max-width: 768px) {
+  .sectionFlex1 div h4 {
+    font-size: 1rem;
+    text-align: center; } }
+
+@media (max-width: 576px) {
+  .sectionFlex1 div h4 {
+    font-size: .8rem;
+    text-align: center; } }
+
+/*  ======================================= */
+/* Parametros paginas secundarias SECTION 2 Flex */
+ /*  ======================================= */
+
+.sectionFlex2 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.sectionFlex2 div {
+  width: 20%; }
+
+.sectionFlex2 div {
+  margin: 0 auto; }
+
+@media (max-width: 768px) {
+  .sectionFlex2 {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; } }
+
+@media (max-width: 768px) {
+  .sectionFlex2 div {
+    width: 40%;
+    align-self: center; } }
+
+@media (max-width: 576px) {
+  .sectionFlex2 {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media (max-width: 576px) {
+  .sectionFlex2 div {
+    margin: 1rem;
+    width: 60%; } }
+
+.sectionFlex2 div img {
+  margin: auto; }
+
+.sectionFlex2 p {
+  text-align: center;
+  font-size: 1rem; }
+
+.sectionFlex2 div h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #f0dec4;
+  border: 1px solid black; }
+
+/*  ======================================= */
+/* Parametros paginas secundarias FOOTER */
+ /*  ======================================= */
+
+.socialSecundario {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.ulSecundario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  text-align: center; }
+
+.ulSecundario li p {
+  margin: -6px;
+  text-align: center; }
+
+.piedePagina {
+  background-color: #f1f3ef;
+  border: 1px solid black;
+  margin: auto;
+  width: 70%; }
+
+.footerSecundario {
+  margin-top: 60px; }
+
+
+
+
