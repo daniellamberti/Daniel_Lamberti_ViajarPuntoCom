@@ -499,7 +499,6 @@ section p {
 .headerSecundario {
   width: 70%;
   margin: auto;
-  border: 2px solid black;
   background-color: #f1f3ef; }
 
 .headerSecundario ul {
@@ -526,7 +525,7 @@ section p {
 
 .secundarioUl a {
   text-decoration: none;
-  color: blue;
+  color: rgb(49, 49, 214);
   font-size: 1rem;
   text-decoration: none; }
 
